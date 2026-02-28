@@ -1,7 +1,7 @@
 import { Handler } from '@netlify/functions';
 import bcrypt from 'bcryptjs';
-import { store } from '../../server/src/lib/store';
-import { generateToken } from '../../server/src/lib/auth';
+import { store } from '../lib/store';
+import { generateToken } from '../lib/auth';
 
 const handler: Handler = async (event) => {
   if (event.httpMethod !== 'POST') {

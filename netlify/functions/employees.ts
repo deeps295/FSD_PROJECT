@@ -1,8 +1,8 @@
 import { Handler } from '@netlify/functions';
 import bcrypt from 'bcryptjs';
-import { store } from '../../server/src/lib/store';
-import { extractToken, verifyToken } from '../../server/src/lib/auth';
-import { Employee } from '../../server/src/lib/types';
+import { store } from '../lib/store';
+import { extractToken, verifyToken } from '../lib/auth';
+import { Employee } from '../lib/types';
 
 const handler: Handler = async (event) => {
   try {
