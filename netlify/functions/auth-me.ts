@@ -1,6 +1,6 @@
 import { Handler } from '@netlify/functions';
-import { store } from '../src/lib/store';
-import { extractToken, verifyToken } from '../src/lib/auth';
+import { store } from '../../server/src/lib/store';
+import { extractToken, verifyToken } from '../../server/src/lib/auth';
 
 const handler: Handler = async (event) => {
   if (event.httpMethod !== 'GET') {

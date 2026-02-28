@@ -1,7 +1,7 @@
 import { Handler } from '@netlify/functions';
-import { store } from '../src/lib/store';
-import { extractToken, verifyToken } from '../src/lib/auth';
-import { LeaveRequest } from '../src/lib/types';
+import { store } from '../../server/src/lib/store';
+import { extractToken, verifyToken } from '../../server/src/lib/auth';
+import { LeaveRequest } from '../../server/src/lib/types';
 
 const handler: Handler = async (event) => {
   try {
